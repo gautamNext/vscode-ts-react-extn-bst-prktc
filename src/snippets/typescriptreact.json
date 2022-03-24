@@ -1,0 +1,59 @@
+{
+  "TS React Functional Component": {
+    "prefix": "trfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
+      "}",
+      "",
+      "export function ${1:${TM_FILENAME_BASE}}(props: ${1:${TM_FILENAME_BASE}}Props){",
+      "      return ${2}",
+      "}"
+    ],
+    "description": "TS React Functional Component"
+  },
+  "React Functional Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "export function ${1:${TM_FILENAME_BASE}}(props){",
+      "      return ${2}",
+      "}"
+    ],
+    "description": "React Functional Component"
+  },
+  "useState Hook": {
+    "prefix": "us",
+    "body": ["const [${1:value}, set${1:Value}] = useState($2);"],
+    "description": "useState Hook"
+  },
+  "useRef Hook": {
+    "prefix": "ur",
+    "body": ["const ${1}Ref = useRef($2);"],
+    "description": "useRef Hook"
+  },
+  "useEffect Hook": {
+    "prefix": "ue",
+    "body": ["useEffect(() => {", " $1", "}, [${2}])", ""],
+    "description": "useEffect Hook"
+  },
+  "useContext Hook": {
+    "prefix": "uc",
+    "body": ["const ${1:context} = useContext(${2})"],
+    "description": "useContext Hook"
+  },
+  "useMemo Hook": {
+    "prefix": "um",
+    "body": ["useMemo(() => ${1:first}, [${2:second}])"],
+    "description": "useMemo Hook"
+  },
+  "useReducer Hook": {
+    "prefix": "uRd",
+    "body": [
+      "const [state, dispatch] = useReducer(${1:first}, ${2:second}, ${3:third})"
+    ],
+    "description": "useReducer Hook"
+  }
+}
